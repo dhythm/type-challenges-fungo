@@ -1,0 +1,24 @@
+{
+  "name": "type-challenges-fungo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dhythm/type-challenges-fungo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dhythm/type-challenges-fungo/issues"
+  },
+  "homepage": "https://github.com/dhythm/type-challenges-fungo#readme",
+  "devDependencies": {
+    "@type-challenges/utils": "^0.1.1",
+    "typescript": "^4.8.4"
+  }
+}
