@@ -18,7 +18,12 @@ type LengthOfString<
 > = S extends `${string}${infer R}`
   ? LengthOfString<R, [...Acc, 0]>
   : Acc["length"];
-type _ = LengthOfString<"kumiko">;
+// type LengthOfString<
+//   S extends string,
+//   A extends string[] = []
+// > = S extends `${infer F}${infer Rest}`
+//   ? LengthOfString<Rest, [...A, F]>
+//   : A["length"];
 
 /* _____________ Test Cases _____________ */
 import type { Equal, Expect } from "@type-challenges/utils";
