@@ -38,6 +38,13 @@ type KebabCase<S> = S extends `${infer F}${infer R}`
 //     ? `${F}${KebabCase<R, false>}`
 //     : `${Head extends false ? "-" : ""}${Lowercase<F>}${KebabCase<R, false>}`
 //   : S;
+// type KebabCase<S extends string> = S extends `${infer F}${infer M}${infer L}`
+//   ? M extends Uppercase<M>
+//     ? M extends Lowercase<M>
+//       ? `${Lowercase<F>}${KebabCase<`${M}${L}`>}`
+//       : `${Lowercase<F>}-${KebabCase<`${M}${L}`>}`
+//     : `${Lowercase<F>}${KebabCase<`${M}${L}`>}`
+//   : `${Lowercase<S>}`;
 
 /* _____________ Test Cases _____________ */
 import type { Equal, Expect } from "@type-challenges/utils";
