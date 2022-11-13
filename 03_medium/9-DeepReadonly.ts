@@ -43,7 +43,6 @@ type DeepReadonly<T> = {
       : DeepReadonly<T[P]>
     : T[P];
 };
-type _ = DeepReadonly<X>;
 
 /* _____________ Test Cases _____________ */
 import type { Equal, Expect } from "@type-challenges/utils";
